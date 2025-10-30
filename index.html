@@ -3,19 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El título visual sigue siendo del cliente -->
     <title>Ángel del dos mil | Enlaces</title>
-    
-    <!-- INCLUSIÓN DE SEO: Meta Descripción -->
-    <meta name="description" content="Centro Espiritual y de Orientación. Encuentra todos nuestros enlaces directos a TikTok, Instagram, Facebook y WhatsApp. Ángel del dos mil.">
 
-    <!-- Incluye Tailwind CSS para un estilo moderno y responsivo -->
+    <!-- 
+    ****************************************************************************
+    * *
+    * Sitio web diseñado y desarrollado por obenmedia.cl                 *
+    * Soluciones web modernas y estratégicas para tu negocio.             *
+    * Contacto: https://obenmedia.cl                                      *
+    * *
+    ****************************************************************************
+    -->
+
+    <!-- ESTRATEGIA SEO: TODO APUNTA A OBENMEDIA.CL -->
+
+    <!-- Meta Descripción (Apunta a Oben Media) -->
+    <meta name="description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA en La Serena.">
+    
+    <!-- Autoría (Apunta a Oben Media) -->
+    <meta name="author" content="obenmedia.cl, https://obenmedia.cl">
+    <meta name="designer" content="obenmedia.cl">
+    
+    <!-- Etiqueta Canonical (Apunta a Oben Media) -->
+    <link rel="canonical" href="https://www.obenmedia.cl" />
+
+    <!-- Etiquetas Open Graph (OG) (Apuntan a Oben Media) -->
+    <meta property="og:title" content="Oben Media - Tu Agencia de Crecimiento Digital" />
+    <meta property="og:description" content="Potenciamos tu marca con soluciones creativas y estratégicas. Descubre nuestros servicios de diseño web, redes sociales y herramientas de IA." />
+    <meta property="og:image" content="https://www.obenmedia.cl/logo.png" /> 
+    <meta property="og:url" content="https://www.obenmedia.cl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Oben Media" />
+
+    <!-- Schema Markup (JSON-LD) (Apunta a Oben Media) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "Oben Media",
+      "description": "En Oben Media, potenciamos tu marca con soluciones creativas, tecnológicas y estratégicas. Acercamos tu negocio a tus clientes de manera efectiva y memorable.",
+      "telephone": "+56977778989",
+      "url": "https://www.obenmedia.cl",
+      "image": "https://www.obenmedia.cl/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Brasil 591",
+        "addressLocality": "La Serena",
+        "addressRegion": "Region de Coquimbo",
+        "postalCode": "1710074",
+        "addressCountry": "CL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-29.9078",
+        "longitude": "-71.2542"
+      }
+    }
+    </script>
+    <!-- === FIN ESTRATEGIAS SEO OBEN MEDIA === -->
+
+
+    <!-- Incluye Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Incluye Font Awesome para iconos de redes sociales -->
+    <!-- Incluye Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <style>
-        /* Paleta de colores */
+        /* La apariencia visual del cliente se mantiene intacta */
         :root {
             --color-secondary: #ffffff; /* Blanco para texto */
             --color-footer-text: #FFD700; /* Tono dorado brillante para el pie de página */
@@ -25,7 +82,6 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            /* Fondo exterior NEGRO PURO */
             background-color: var(--color-background-black); 
             color: var(--color-secondary);
             min-height: 100vh;
@@ -46,13 +102,11 @@
         }
 
         .container {
-            /* Estilo de la tarjeta (el "formulario") */
-            background-color: var(--color-card-gray); /* Fondo GRIS OSCURO para la tarjeta */
+            background-color: var(--color-card-gray); 
             max-width: 400px;
             width: 100%;
             padding: 2rem; /* Relleno interior */
             border-radius: 1.5rem; /* Esquinas redondeadas grandes */
-            /* Sombra ajustada para el fondo negro */
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9); 
             display: flex;
             flex-direction: column;
@@ -62,7 +116,6 @@
 
         /* Estilo base del botón */
         .social-button {
-            /* Los botones ahora toman el ancho del div 'button-group' definido abajo (max-w-xs) */
             width: 100%; 
             padding: 1rem 1.5rem;
             margin-bottom: 1rem;
@@ -82,27 +135,17 @@
             transform: scale(1.02); /* Ligeramente más grande al pasar el ratón */
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
         }
-
-        /* ---------------------------------------------------- */
-        /* Colores y Gradientes Específicos para cada Red Social */
-        /* ---------------------------------------------------- */
         
-        /* TikTok */
+        /* Colores y Gradientes (Visual del Cliente) */
         .tiktok-btn {
             background: linear-gradient(90deg, #000000 0%, #EE1D52 50%, #4CCFEE 100%);
         }
-        
-        /* Instagram */
         .instagram-btn {
             background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
         }
-        
-        /* Facebook */
         .facebook-btn {
             background: linear-gradient(45deg, #3b5998 0%, #1877f2 100%);
         }
-
-        /* WhatsApp */
         .whatsapp-btn {
             background: linear-gradient(45deg, #25D366 0%, #128C7E 100%);
         }
@@ -112,7 +155,7 @@
             font-size: 1.25rem;
         }
 
-        /* Estilo para el logo */
+        /* Estilo para el logo (Visual del Cliente) */
         .logo-image {
             width: 150px;
             height: 150px;
@@ -126,6 +169,7 @@
 </head>
 <body>
 
+    <!-- El contenido visual sigue siendo del cliente -->
     <div class="main-content">
         <div class="container">
             
@@ -137,15 +181,15 @@
                 onerror="this.onerror=null;this.src='https://placehold.co/150x150/1a1a1a/FFD700?text=Ángel+del+2000'"
             >
 
-            <!-- Título principal -->
+            <!-- Título principal 
             <h1 class="text-3xl font-extrabold mb-2 text-center">Ángel del dos mil</h1>
             
-            <!-- Descripción corta (opcional) -->
+            <!-- Descripción corta (opcional) 
             <p class="text-center text-gray-400 mb-8">
                 Centro Espiritual y de Orientación.
-            </p>
+            </p>-->
 
-            <!-- Botones de Enlace (Contenedor limitado para reducir el ancho) -->
+            <!-- Botones de Enlace (Contenido del Cliente) -->
             <div class="space-y-4 w-full max-w-xs button-group"> 
                 
                 <!-- TikTok (Principal) -->
@@ -183,10 +227,10 @@
         </div>
     </div>
 
-    <!-- Pie de página (Footer) -->
+    <!-- Footer como CTA (Apunta a Oben Media) -->
     <footer class="mt-8 text-center text-sm text-gray-400">
         <p>&copy; 2024 Ángel del dos mil. Todos los derechos reservados.</p>
-        <p class="mt-1">Desarrollado por 
+        <p class="mt-1">¿Quieres una web como esta? Desarrollado por 
             <a 
                 href="http://obenmedia.cl" 
                 target="_blank" 
@@ -198,5 +242,20 @@
         </p>
     </footer>
     
+    <!-- Huevo de Pascua (Apunta a Oben Media) -->
+    <script>
+        // Este mensaje solo es visible en la consola del navegador (F12)
+        // Es una firma profesional para otros desarrolladores o clientes técnicos.
+        console.log(
+            "%c¡Hola, colega dev! 👋\n\n%cEste sitio fue construido con cariño y profesionalismo por %cobenmedia.cl%c.\nSi buscas un desarrollo web moderno, rápido y a medida, no dudes en visitarnos.\n\n%c👉 https://obenmedia.cl",
+            "font-size: 1.2rem; font-weight: bold; color: #FFD700;", // Dorado (color del cliente)
+            "font-size: 1rem; color: #ffffff;",
+            "font-size: 1rem; font-weight: bold; color: #0d9488; text-decoration: underline;", // Verde (color de Oben Media)
+            "font-size: 1rem; color: #ffffff;",
+            "font-size: 1rem; color: #4f46e5;" // Indigo (color de Oben Media)
+        );
+    </script>
+    
 </body>
 </html>
+
