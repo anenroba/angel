@@ -84,20 +84,20 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--color-background-black); 
             color: var(--color-secondary);
-            min-height: 100vh;
+            /* min-height: 100vh; */ /* Eliminado para evitar scroll innecesario en móvil */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Centra el contenido verticalmente */
-            padding: 20px;
+            /* justify-content: center; */ /* Eliminado para alinear al top */
+            padding: 1.5rem 1rem; /* 24px arriba/abajo, 16px lados */
         }
 
         .main-content {
-            flex-grow: 1;
+            /* flex-grow: 1; */ /* Eliminado */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            /* justify-content: center; */ /* Eliminado */
             width: 100%;
         }
 
@@ -105,20 +105,20 @@
             background-color: var(--color-card-gray); 
             max-width: 400px;
             width: 100%;
-            padding: 2rem; /* Relleno interior */
+            padding: 1.5rem; /* Reducido de 2rem */
             border-radius: 1.5rem; /* Esquinas redondeadas grandes */
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9); 
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 2rem; /* Espacio antes del pie de página */
+            margin-bottom: 1.5rem; /* Reducido de 2rem */
         }
 
         /* Estilo base del botón */
         .social-button {
             width: 100%; 
-            padding: 1rem 1.5rem;
-            margin-bottom: 1rem;
+            padding: 0.875rem 1.5rem; /* Reducido de 1rem (14px) */
+            /* margin-bottom: 1rem; */ /* Eliminado - Ahora se usa space-y-3 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -157,8 +157,8 @@
 
         /* Estilo para el logo (Visual del Cliente) */
         .logo-image {
-            width: 150px;
-            height: 150px;
+            width: 140px; /* Reducido de 150px */
+            height: 140px; /* Reducido de 150px */
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 1.5rem;
@@ -181,16 +181,10 @@
                 onerror="this.onerror=null;this.src='https://placehold.co/150x150/1a1a1a/FFD700?text=Ángel+del+2000'"
             >
 
-            <!-- Título principal 
-            <h1 class="text-3xl font-extrabold mb-2 text-center">Ángel del dos mil</h1>
-            
-            <!-- Descripción corta (opcional) 
-            <p class="text-center text-gray-400 mb-8">
-                Centro Espiritual y de Orientación.
-            </p>-->
+            <!-- Título principal y Descripción eliminados para ahorrar espacio -->
 
             <!-- Botones de Enlace (Contenido del Cliente) -->
-            <div class="space-y-4 w-full max-w-xs button-group"> 
+            <div class="space-y-3 w-full max-w-xs button-group"> <!-- Espacio reducido de space-y-4 -->
                 
                 <!-- TikTok (Principal) -->
                 <a href="https://www.tiktok.com/@angeldeldosmil" target="_blank" class="social-button tiktok-btn">
@@ -228,9 +222,9 @@
     </div>
 
     <!-- Footer como CTA (Apunta a Oben Media) -->
-    <footer class="mt-8 text-center text-sm text-gray-400">
-        <p>&copy; 2024 Ángel del dos mil. Todos los derechos reservados.</p>
-        <p class="mt-1">¿Quieres una web como esta? Desarrollado por 
+    <footer class="mt-4 text-center text-sm text-gray-400"> <!-- Margen reducido de mt-8 -->
+        <!-- Eliminado el texto de Copyright para hacer el footer más corto -->
+        <p class="mt-1">Desarrollado por 
             <a 
                 href="http://obenmedia.cl" 
                 target="_blank" 
@@ -258,4 +252,5 @@
     
 </body>
 </html>
+
 
