@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building The Bunker | Kit de Rescate Gratuito</title>
+    
+    <!-- Meta tags SEO y Preview -->
+    <meta name="description" content="Guía corta, realista y sin autoayuda para desatascarte cuando tu cabeza dice 'hasta aquí'. Un salvavidas para mentes intensas y saturadas.">
+    <meta name="theme-color" content="#080c14">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#2563eb',
+                            sky: '#38bdf8',
+                            night: '#080c14',
+                            surface: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['System-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Estilos personalizados minimalistas para suavidad visual sensory-friendly -->
+    <style>
+        /* Ajuste de selección de texto descansado */
+        ::selection {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+        /* Sombras suaves en tono azul noche */
+        .glow-warm {
+            box-shadow: 0 0 35px -5px rgba(37, 99, 235, 0.15);
+        }
+        .card-border {
+            border: 1px solid rgba(30, 41, 59, 1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#080c14] text-slate-100 font-sans antialiased min-h-screen selection:bg-blue-600 selection:text-white">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="w-full border-b border-slate-800/80 bg-[#080c14]/90 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="font-black tracking-wider text-xs sm:text-sm text-slate-300 uppercase">
+                    BUILDING THE BUNKER
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-950/50 text-sky-400 border border-sky-800/50">
+                    KIT DE RESCATE
+                </span>
+            </div>
+            <a href="#formulario" class="text-xs font-medium text-slate-400 hover:text-sky-400 transition-colors hidden sm:block">
+                Descarga Gratuita ↓
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6">
+
+        <!-- HERO SECTION (Zona superior de alto impacto) -->
+        <section class="py-12 sm:py-20 flex flex-col items-center text-center">
+            
+            <!-- Badge superior -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-[#0f172a] border border-slate-800 text-slate-300 mb-6">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                UN SALVAVIDAS PARA MENTES INTENSAS Y SATURADAS
+            </div>
+
+            <!-- H1 (Titular Principal) -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-100 max-w-4xl leading-tight sm:leading-tight">
+                ¿Te pasa que una tarea de 3 minutos a veces te cuesta <span class="text-sky-400 underline decoration-sky-500/30 decoration-wavy">4 horas de angustia</span>?
+            </h1>
+
+            <!-- Subtítulo -->
+            <p class="mt-6 text-base sm:text-xl text-slate-300 max-w-3xl leading-relaxed text-balance">
+                Para los días en que abrir un mensaje de WhatsApp se siente como escalar una montaña, te quedas mirando la pantalla sin arrancar y cualquier agenda solo te hace sentir culpable. Descarga gratis el Kit de Rescate: una guía corta, realista y sin frases de autoayuda barata para desatascarte cuando tu cabeza dice <span class="text-slate-100 font-medium">'hasta aquí'</span>.
+            </p>
+
+            <!-- Formulario de Captura + Mockup visual Grid -->
+            <div class="w-full max-w-4xl mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-left">
+                
+                <!-- Formulario -->
+                <div id="formulario" class="lg:col-span-7 bg-[#0f172a]/90 p-6 sm:p-8 rounded-2xl card-border glow-warm">
+                    <form action="https://systeme.io/embedded/40067548/subscription" method="post" class="lead-form space-y-4">
+                        
+                        <div class="space-y-2">
+                            <label for="email-hero" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                                Tu correo electrónico
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email-hero"
+                                name="email" 
+                                required
+                                placeholder="Escribe aquí tu correo principal..." 
+                                class="w-full px-4 py-3.5 bg-[#0f172a] border border-slate-700 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+                            />
+                        </div>
+
+                        <!-- Parameter required by Systeme.io -->
+                        <input type="hidden" name="success_url" value="https://andyrodrez.com/gracias">
+
+                        <button 
+                            type="submit" 
+                            class="submit-btn w-full py-4 px-6 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-base sm:text-lg rounded-xl transition-all transform active:scale-[0.99] flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                        >
+                            <span>QUIERO EL KIT DE RESCATE GRATIS</span>
+                            <span class="text-xl">➔</span>
+                        </button>
+
+                        <div class="form-feedback hidden text-sm p-3 rounded-lg bg-sky-950/50 border border-sky-800/50 text-sky-300 text-center font-medium"></div>
+
+                        <!-- Micro-texto de confianza -->
+                        <p class="text-xs text-slate-400 text-center pt-2 leading-normal">
+                            🔒 Cero spam. Nada de correos diarios con fórmulas mágicas. Te das de baja con 1 clic.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Mockup Card Placeholder (Documento) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-xs sm:max-w-sm bg-gradient-to-br from-[#0f172a] to-[#080c14] p-6 rounded-2xl card-border relative overflow-hidden group shadow-2xl">
+                        <!-- Decoración visual del mockup -->
+                        <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                        
+                        <div class="border border-slate-800 rounded-xl p-5 bg-[#080c14]/80 space-y-4">
+                            <div class="flex items-center justify-between text-xs text-sky-400 font-mono">
+                                <span>PDF • LECTURA RÁPIDA</span>
+                                <span>10 MIN</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[10px] tracking-widest text-slate-500 uppercase font-bold block">BUILDING THE BUNKER</span>
+                                <h3 class="text-xl font-black text-slate-100 leading-snug">EL KIT DE RESCATE</h3>
+                                <p class="text-xs text-slate-400">Guía de primeros auxilios para días saturados.</p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                                <span>Por Andy Rodrez</span>
+                                <span class="text-sky-400 font-semibold">100% GRATIS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: "ESTO ES PARA TI SI RECONOCES ESTO..." -->
+        <section class="py-12 border-t border-slate-900">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-100">
+                    Esto es para ti si reconoces esto...
+                </h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">
+                    Situaciones cotidianas cuando tu sistema nervioso está sobrecargado.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="bg-[#0f172a]/70 p-6 sm:p-7 rounded-2xl card-border hover:bg-[#0f172a] transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-3xl" role="img" aria-label="Sillón">🛋️</div>
+                        <h3 class="text-lg font-bold text-slate-100">
+                            El cansancio de "no hacer nada"
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Pasarte la tarde entera sin trabajar, pero sin poder descansar porque tu cabeza te repite en bucle: <em class="text-slate-300 font-medium">'deberías estar haciendo algo'</em>. Terminas el día agotado sin haber tocado una sola tarea.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-[#0f172a]/70 p-6 sm:p-7 rounded-2xl card-border hover:bg-[#0f172a] transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-3xl" role="img" aria-label="Móvil">📱</div>
+                        <h3 class="text-lg font-bold text-slate-100">
+                            El mensaje que creció como bola de nieve
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Un correo o WhatsApp sencillo que no respondiste a tiempo. Pasaron los días, la culpa se acumuló, y ahora prefieres no abrir la app antes que enfrentar esa conversación.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-[#0f172a]/70 p-6 sm:p-7 rounded-2xl card-border hover:bg-[#0f172a] transition-all flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="text-3xl" role="img" aria-label="Libreta">📓</div>
+                        <h3 class="text-lg font-bold text-slate-100">
+                            El cementerio de agendas
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Esa libreta cara que compraste con toda la ilusión, usaste cuatro días seguidos y ahora te mira desde la mesa recordándote que <em class="text-slate-300 font-medium">'fallaste otra vez'</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: QUÉ ENCONTRARÁS DENTRO -->
+        <section class="py-12 border-t border-slate-900">
+            <div class="max-w-3xl mx-auto bg-[#0f172a]/40 border border-slate-800 rounded-3xl p-6 sm:p-10">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-100">
+                        Qué encontrarás dentro
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1">Herramientas tácticas, cortas y aplicables hoy mismo.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Punto 1 -->
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-[#080c14]/60 border border-slate-800/80">
+                        <div class="text-2xl shrink-0 pt-0.5">🛑</div>
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-100">
+                                El botón de pausa
+                            </h3>
+                            <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+                                3 pasos mecánicos para romper la parálisis cuando llevas horas bloqueado en la silla.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Punto 2 -->
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-[#080c14]/60 border border-slate-800/80">
+                        <div class="text-2xl shrink-0 pt-0.5">🔋</div>
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-100">
+                                El menú del 20%
+                            </h3>
+                            <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+                                Qué hacer en los días malos para no sentirte culpable, sin forzar a tu cerebro a imposibles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Punto 3 -->
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-[#080c14]/60 border border-slate-800/80">
+                        <div class="text-2xl shrink-0 pt-0.5">🔄</div>
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold text-slate-100">
+                                El permiso para borrar la pizarra
+                            </h3>
+                            <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+                                Cómo quitarte de encima semanas de tareas pendientes sin culpa y volver a respirar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: QUIÉN ESTÁ DETRÁS (Sobre Andy Rodrez) -->
+        <section class="py-12 border-t border-slate-900">
+            <div class="max-w-4xl mx-auto bg-[#0f172a]/60 rounded-3xl card-border p-6 sm:p-10">
+                <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                    
+                    <!-- Foto de Perfil Sobria Placeholder / Avatar -->
+                    <div class="shrink-0 text-center">
+                        <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center overflow-hidden shadow-xl mx-auto">
+                            <!-- Avatar en SVG elegante para evitar imágenes rotas -->
+                            <svg class="w-16 h-16 text-slate-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <span class="block mt-3 font-bold text-slate-200 text-sm">Andy Rodrez</span>
+                        <span class="block text-xs text-sky-400 font-mono">Creador de Building The Bunker</span>
+                    </div>
+
+                    <!-- Contenido de Historia -->
+                    <div class="space-y-4 text-left">
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-100 leading-snug">
+                            "Tardé 48 años y un colapso en entender que no era falta de fuerza de voluntad."
+                        </h2>
+                        
+                        <div class="text-slate-300 text-sm sm:text-base leading-relaxed space-y-3">
+                            <p>
+                                Soy Andy Rodrez. Durante décadas creí que el problema era yo: que no me esforzaba lo suficiente, que era desordenado, que me faltaba disciplina. A los 48 años mi cabeza reventó, toqué fondo y descubrí mi neurodivergencia.
+                            </p>
+                            <p>
+                                Ahí entendí que intentar encajar en los métodos normales era como forzar una pieza cuadrada en un agujero redondo.
+                            </p>
+                            <p class="text-slate-200 font-medium">
+                                Creé <em class="not-italic text-sky-400">'Building The Bunker'</em> no para enseñarte a ser una máquina hiperproductiva, sino para compartir las herramientas que a mí me permitieron volver a funcionar en paz.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FINAL / SEGUNDO CTA -->
+        <section class="py-12 sm:py-16 border-t border-slate-900 text-center">
+            <div class="max-w-2xl mx-auto space-y-6">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 leading-tight">
+                    No tienes que arreglar toda tu vida esta tarde.
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg">
+                    Solo descarga la guía, guárdala cerca y úsala la próxima vez que te quedes en blanco.
+                </p>
+
+                <!-- Formulario Secundario Integrado -->
+                <div class="pt-4 max-w-md mx-auto">
+                    <form action="https://systeme.io/embedded/40067548/subscription" method="post" class="lead-form space-y-3">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            required
+                            placeholder="Escribe aquí tu correo principal..." 
+                            class="w-full px-4 py-3.5 bg-[#0f172a] border border-slate-700 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-center sm:text-left transition-all"
+                        />
+                        
+                        <input type="hidden" name="success_url" value="https://andyrodrez.com/gracias">
+
+                        <button 
+                            type="submit" 
+                            class="submit-btn w-full py-4 px-6 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-base rounded-xl transition-all shadow-lg shadow-blue-600/20 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                        >
+                            QUIERO EL KIT DE RESCATE GRATIS ➔
+                        </button>
+
+                        <div class="form-feedback hidden text-sm p-3 rounded-lg bg-sky-950/50 border border-sky-800/50 text-sky-300 text-center font-medium"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-slate-900 py-8 bg-[#080c14]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© Andy Rodrez - Building The Bunker. Hecho para mentes reales.</p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-slate-400 transition-colors">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT VANILLA -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const forms = document.querySelectorAll('.lead-form');
+
+            forms.forEach(form => {
+                form.addEventListener('submit', function (e) {
+                    const submitBtn = this.querySelector('.submit-btn');
+                    const feedback = this.querySelector('.form-feedback');
+
+                    if (submitBtn) {
+                        // Cambiar estado del botón
+                        submitBtn.disabled = true;
+                        submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+                        submitBtn.innerHTML = `
+                            <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            <span>ENVIANDO TU KIT...</span>
+                        `;
+                    }
+
+                    if (feedback) {
+                        feedback.textContent = "✔ Kit enviado. Revisa tu bandeja de entrada (si no lo ves en 2 minutos, mira en spam o promociones).";
+                        feedback.classList.remove('hidden');
+                    }
+
+                    // Se permite el envío normal de Systeme.io hacia la página de gracias (success_url)
+                });
+            });
+        });
+    </script>
+</body>
+</html>
